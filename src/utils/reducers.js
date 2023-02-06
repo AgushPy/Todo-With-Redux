@@ -5,7 +5,7 @@ export const todoReducer = (state = [],action) =>{
         case 'DELETE_TODO':
             return state.filter((todo,index) => index !== action.index)
         case 'COMPLETE_TODO': 
-            state[action.id].complete = true;
+            state[action.id].complete = !state[action.id].complete;
             return [...state];
             default:
             return state

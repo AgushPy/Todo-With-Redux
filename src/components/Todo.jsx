@@ -19,7 +19,7 @@ export const Todo = ({ todo,id }) => {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            {todo.complete? <CheckIcon/> : <Link onClick={e => dispatch(COMPLETE_TODO(id))}><DoNotDisturbOnIcon/></Link>}
+            {todo.complete? <Link onClick={e => dispatch(COMPLETE_TODO(id))}><CheckIcon/></Link> : <Link onClick={e => dispatch(COMPLETE_TODO(id))}><DoNotDisturbOnIcon/></Link>}
           </Avatar>
         </ListItemAvatar>
         <Container maxWidth={'100%'} sx={{textAlign:'left'}}>
