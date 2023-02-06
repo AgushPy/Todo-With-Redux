@@ -17,7 +17,7 @@ const CreateTodo = () => {
           dispatch(ADD_TODO(task.current.value));
         }}
       >
-        <TextField type="text" inputRef={task}></TextField>
+        <TextField fullWidth type="text" inputRef={task}></TextField>
         <Button type="submit">Añadir</Button>
       </form>
     </>
